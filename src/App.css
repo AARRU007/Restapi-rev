@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  background-size: cover;
+  height: 1200px;
+  background-repeat: no-repeat;
+  animation: changeBackground 5s infinite; /* Change every 30 seconds */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.box2 {
+  color: beige;
+  text-align: center;
+  margin-left: 300px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+  }
+  33% {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/311/453/240/selective-focus-micro-photography-of-white-petaled-flower-wallpaper-preview.jpg');
+  }
+  66% {
+    background-image: url('https://img.freepik.com/premium-photo/majestic-mountain-range-sunrise-with-small-lake-lone-tree-foreground_685067-2689.jpg');
+  }
+  
+  100% {
+    background-image: url('https://wallpaperaccess.com/full/1133458.jpg'); /* Repeat the first image to create a loop */
+  }
+}
